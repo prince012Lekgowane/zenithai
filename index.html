@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zenith – Learn Smarter, Not Harder!</title>
+
+    <!-- Favicon (Replace with your own if desired) -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="theme-color" content="#000000">
+    
+    <!-- Tailwind CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    
+    <style>
+        /* Main gradient to match attached images (teal-to-gray) */
+        .gradient-bg {
+            background: linear-gradient(135deg, #4B6B72, #9CA5A9);
+        }
+        .accent-gradient {
+            background: linear-gradient(135deg, #FF6B6B, #4ECDC4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .fade-in {
+            animation: fadeIn 1s ease-in;
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        .hover-scale {
+            transition: transform 0.3s ease;
+        }
+        .hover-scale:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="text-white">
+    <!-- Hero Section -->
+    <header class="gradient-bg py-20 px-4">
+        <div class="container mx-auto max-w-6xl">
+            <!-- Navigation -->
+            <nav class="flex justify-between items-center mb-16">
+                <div class="flex items-center gap-2">
+                    <!-- App Name/Logo -->
+                    <h1 class="text-4xl font-bold">Zenith</h1>
+                </div>
+                <div class="space-x-6">
+                    <a href="#features" class="hover:text-gray-300">Features</a>
+                    <a href="#download" class="hover:text-gray-300">Download</a>
+                </div>
+            </nav>
+            
+            <!-- Hero Content -->
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h2 class="text-5xl font-bold mb-6 fade-in">
+                        Learn Smarter, Not Harder!
+                    </h2>
+                    <p class="text-xl mb-8 fade-in">
+                        Meet <strong>Zenith</strong>, the AI-powered learning companion for students at any level.
+                        Summarize documents instantly, generate and take quizzes, earn badges, and discover
+                        job opportunities – all in one place.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#download" class="bg-blue-600 text-white px-8 py-3 rounded-full hover-scale">
+                            Get Zenith Now
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <!-- Replace with your own Zenith hero image -->
+                    <img src="3.png" alt="Zenith App Interface" class="mx-auto rounded-3xl shadow-2xl">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 px-4 bg-black">
+        <div class="container mx-auto max-w-6xl">
+            <h2 class="text-4xl font-bold mb-16 text-center">🚀 Essential Features</h2>
+            <div class="grid md:grid-cols-3 gap-10">
+                <!-- Feature 1 -->
+                <div class="text-center p-6 hover-scale">
+                    <!-- Replace icon/image as needed -->
+                    <img src="2.png" alt="AI Summaries" class="mx-auto mb-4 rounded-lg">
+                    <div class="text-5xl mb-4">💡</div>
+                    <h3 class="text-2xl font-bold mb-4">AI Summaries</h3>
+                    <p>
+                        Upload your documents and let Zenith create advanced, concise summaries
+                        without losing critical details.
+                    </p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="text-center p-6 hover-scale">
+                    <!-- Replace icon/image as needed -->
+                    <img src="4.png" alt="Quiz Generator" class="mx-auto mb-4 rounded-lg">
+                    <div class="text-5xl mb-4">✅</div>
+                    <h3 class="text-2xl font-bold mb-4">Quiz Generator</h3>
+                    <p>
+                        Generate quizzes to test your knowledge instantly. Receive immediate feedback
+                        and track your progress.
+                    </p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="text-center p-6 hover-scale">
+                    <!-- Replace icon/image as needed -->
+                    <img src="6.png" alt="Certificates & Opportunities" class="mx-auto mb-4 rounded-lg">
+                    <div class="text-5xl mb-4">🏆</div>
+                    <h3 class="text-2xl font-bold mb-4">Certificates & More</h3>
+                    <p>
+                        Earn badges for passed quizzes, download PDF certificates, and explore
+                        job/bursary opportunities in-app.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- App Screenshots -->
+    <section class="py-20 px-4 gradient-bg">
+        <div class="container mx-auto max-w-6xl">
+            <h2 class="text-4xl font-bold mb-16 text-center">See Zenith in Action</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Replace these images with your own Zenith screenshots -->
+                <img src="7.png" alt="Zenith Screenshot 1" class="rounded-3xl shadow-lg hover-scale">
+                <img src="5.png" alt="Zenith Screenshot 2" class="rounded-3xl shadow-lg hover-scale">
+                <img src="8.png" alt="Zenith Screenshot 3" class="rounded-3xl shadow-lg hover-scale">
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="py-20 px-4 bg-black">
+        <div class="container mx-auto max-w-6xl text-center">
+            <h2 class="text-4xl font-bold mb-8">Download Zenith Today</h2>
+            <p class="text-xl mb-12">Available on Android and iOS</p>
+            <div class="flex justify-center space-x-6">
+                <!-- Replace these links with your actual app store links -->
+                <a href="#" class="hover-scale">
+                    <img src="play.png" alt="Get it on Google Play" class="rounded-lg">
+                </a>
+                <a href="#" class="hover-scale">
+                    <img src="apple.png" alt="Download on the App Store" class="rounded-lg">
+                </a>
+              <a href="#" class="hover-scale">
+                    <img src="loadly.png" alt="Download on the App Store" class="rounded-lg">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-10 px-4 border-t border-gray-800 bg-black">
+        <div class="container mx-auto max-w-6xl">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p>&copy; 2025 Zenith. All rights reserved.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-gray-300">Privacy Policy</a>
+                    <a href="#" class="hover:text-gray-300">Terms of Service</a>
+                    <a href="#" class="hover:text-gray-300">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
